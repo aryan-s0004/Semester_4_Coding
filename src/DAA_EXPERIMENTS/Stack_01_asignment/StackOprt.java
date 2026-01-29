@@ -1,17 +1,14 @@
 package DAA_EXPERIMENTS;
 import java.util.Scanner;
 public class StackOprt {
-
     int[] stack;
     int top;
     int size;
-
     StackOprt(int s) {     // parameter name changed
         size = s;
         stack = new int[size];
         top = -1;
     }
-
     void push(int x) {
         if (isFull()) {
             System.out.println("Stack Overflow");
@@ -20,7 +17,6 @@ public class StackOprt {
             System.out.println(x + " pushed");
         }
     }
-
     void pop() {
         if (isEmpty()) {
             System.out.println("Stack Underflow");
@@ -28,7 +24,6 @@ public class StackOprt {
             System.out.println(stack[top--] + " popped");
         }
     }
-
     void peek() {
         if (isEmpty()) {
             System.out.println("Stack is Empty");
@@ -44,17 +39,13 @@ public class StackOprt {
     boolean isFull() {
         return top == size - 1;
     }
-
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
         StackOprt s = new StackOprt(5);
-
         while (true) {
             System.out.println("\n1.Push 2.Pop 3.Peek 4.isEmpty 5.isFull 6.Exit");
             System.out.print("Choice: ");
             int ch = sc.nextInt();
-
             switch (ch) {
                 case 1:
                     System.out.print("Enter value: ");
@@ -76,8 +67,7 @@ public class StackOprt {
                     sc.close();
                     return;
                 default:
-                    System.out.println("Invalid choice");
-            }
-        }
-    }
-}
+                    System.out.println("Invalid choice");}}}}
+
+
+

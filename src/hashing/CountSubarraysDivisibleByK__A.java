@@ -1,4 +1,12 @@
-package hashing;/*
+package hashing;
+
+import java.util.*;
+
+public class CountSubarraysDivisibleByK__A {
+
+    public static int arraysDivByK(int[] nums, int k) {
+
+/*
  Problem: Count Subarrays Divisible by K
 
 Find number of subarrays whose sum is divisible by k.
@@ -9,12 +17,6 @@ nums = [4,5,0,-2,-3,1], k = 5
  Output:
 7
 */
-
-import java.util.*;
-
-public class CountSubarraysDivisibleByK {
-
-    public static int subarraysDivByK(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0,1);
 
@@ -39,6 +41,6 @@ public class CountSubarraysDivisibleByK {
         int[] nums = {4,5,0,-2,-3,1};
         int k = 5;
 
-        System.out.println(subarraysDivByK(nums, k));
+        System.out.println(arraysDivByK(nums, k));
     }
 }
